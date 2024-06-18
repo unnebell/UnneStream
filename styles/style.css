@@ -1,0 +1,34 @@
+body {
+    background-color: aqua;
+}
+
+#ret1 { 
+    background-color: rgb(6, 163, 163) ;
+    width: 450px;
+    height: 475px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5%;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+#ret1 > h1 {
+    text-align: center;
+}
+
+#ret2 {
+    background-color: rgb(13, 97, 97);
+    width: 400px;
+    height: 350px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 58%;
+    left: 50%;
+    border-radius: 5%;
+}
