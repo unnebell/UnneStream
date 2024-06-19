@@ -1,19 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: ;
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+:root {
+    --aquaescuro: rgb(1, 54, 54);
+    --aquaclaro: (6, 163, 163);
+}
+
 body {
-    background-color: aqua;
+    background-color: rgb(1, 54, 54);
+}
+
+#tit {
+    text-align: center;
+    font-family: poppins;
+    color: white;
+    font-size: 4em;
+    font-weight: 500;
 }
 
 #ret1 { 
-    background-color: rgb(6, 163, 163) ;
-    width: 450px;
-    height: 475px;
+    background-color: rgb(6, 163, 163);
+    box-shadow: ;
+    width: 500px;
+    height: 150px;
 
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    border-radius: 5%;
 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+
+    font-family: poppins;
+    font-size: 14px;
     color: white;
 }
 
@@ -22,13 +53,64 @@ body {
 }
 
 #ret2 {
-    background-color: rgb(13, 97, 97);
     width: 400px;
-    height: 350px;
+    height: 75px;
 
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 58%;
+    top: 65%;
     left: 50%;
-    border-radius: 5%;
+    border-radius: 15px;
+}
+
+#cxnome {
+    background-color: rgb(1, 54, 54);
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+
+    width: 350px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+
+    text-indent: 10px;
+    color: white;
+    text-align: center;
+    font-family: poppins;
+    font-size: 18px;
+}
+
+#cxnome::after {
+    border-color: yellow;
+}
+
+#go {
+    background-color: aqua;
+
+    width: 40px;
+    padding: 5px;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+
+    box-shadow: 0px 5px 10px var(--aquaescuro);
+    border-radius: 15px;
+
+    text-align: center;
+    font-family: poppins;
+    color: var(--aquaescuro);
+    font-weight: 800;
+}
+
+#go:hover {
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
 }
