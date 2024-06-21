@@ -19,20 +19,13 @@
 
 body {
     background-color: var(--aquaescuro);
-}
-
-#tit {
-    text-align: center;
     font-family: poppins;
-    color: white;
-    font-size: 4em;
-    font-weight: 500;
 }
 
-#ret1 { 
+#retp {
     background-color: var(--aquaclaro);
-    width: 500px;
-    height: 150px;
+    width: 1200px;
+    height: 500px;
 
     position: absolute;
     transform: translate(-50%, -50%);
@@ -42,74 +35,59 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
 
-    font-family: poppins;
-    font-size: 14px;
+    text-align: center;
     color: white;
 }
 
-#ret1 > h1 {
-    text-align: center;
-}
-
-#ret2 {
-    width: 400px;
-    height: 75px;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 65%;
-    left: 50%;
-    border-radius: 15px;
-}
-
-#cxnome {
+.retcont {
     background-color: var(--aquaescuro);
+    width: 1100px;
+    height: 300px;
 
+    /* Abaixo está a forma que encontrei pra centralizar o retcont no retp */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    border-radius: 15px;
 
-    width: 350px;
-    height: 40px;
-    border: none;
-    border-radius: 15px;
+    /* Abaixo está a flexbox para poder centralizar os conteúdos (.retitem) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
 
-    text-indent: 10px;
-    color: white;
+.retitem {
+    background-color: var(--aquaclaro);
+    width: 250px;
+    height: 250px;
+
+    justify-content: space-between;
+    padding: 10px;
+    margin: 50px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+.retitem > a {
+    text-decoration: none;
     text-align: center;
-    font-family: poppins;
-    font-size: 18px;
+    color: white;
+    font-size: 1.2em;
+
+    display: flex;
+    justify-content: center;
 }
 
-#cxnome::after {
-    border-color: yellow;
-}
-
-#go {
-    background-color: aqua;
-
-    width: 40px;
-    padding: 5px;
-
+#back {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 70%;
+    top: 90%;
     left: 50%;
 
-    box-shadow: 0px 5px 10px var(--aquaescuro);
-    border-radius: 15px;
-
-    text-align: center;
-    font-family: poppins;
-    color: var(--aquaescuro);
-    font-weight: 800;
-}
-
-#go:hover {
     color: white;
-    cursor: pointer;
-    scale: 1.1;
+    text-decoration: none;
 }
